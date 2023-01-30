@@ -1,4 +1,4 @@
-# Cygwin Uninstaller Bat Script
+# Cygwin Uninstaller
 
 <h2>Description</h2>
 
