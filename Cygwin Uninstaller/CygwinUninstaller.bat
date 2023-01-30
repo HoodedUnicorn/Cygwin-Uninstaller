@@ -2,7 +2,7 @@
 echo Running script as administrator
 
 echo Deleting Cygwin shortcuts on the Desktop !
-set CYGWIN_DSK="Users\Public\Desktop\Cygwin64 Terminal.lnk"
+set CYGWIN_DSK="C:\Users\Public\Desktop\Cygwin64 Terminal.lnk"
 if exist %CYGWIN_DSK% (
     echo Deleting Cygwin Start Menu Program: %CYGWIN_DSK%
     del /f /q %CYGWIN_DSK%
@@ -12,7 +12,7 @@ if exist %CYGWIN_DSK% (
 pause
 
 echo Deleting Cygwin shortcuts on the Start Menu
-set CYGWIN_STM="Windows\Start Menu\Programs\Cygwin\Cygwin64 Terminal.lnk"
+set CYGWIN_STM="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Cygwin\Cygwin64 Terminal.lnk"
 if exist %CYGWIN_STM% (
     echo Deleting Cygwin Start Menu Program: %CYGWIN_STM%
     del /f /q %CYGWIN_STM%
@@ -26,7 +26,7 @@ reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Cygwin" /f
 pause
 
 echo Deleting Cygwin installation directory
-set CYGWIN_DIR=C:\cygwin
+set CYGWIN_DIR=C:\cygwin64
 if exist %CYGWIN_DIR% (
     echo Deleting Cygwin directory: %CYGWIN_DIR%
     rd /s /q %CYGWIN_DIR%
