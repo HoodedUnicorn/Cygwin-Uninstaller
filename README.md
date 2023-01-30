@@ -2,13 +2,7 @@
 
 <h2>Description</h2>
 
-This script is designed to automate the process of uninstalling Cygwin from a Windows machine. The script performs the following actions:
-
-   * Delete the Cygwin shortcuts on the Desktop and Start Menu.
-   * Delete the registry node Software\Cygnus Solutions under HKEY_LOCAL_MACHINE and HKEY_CURRENT_USER.
-   * Delete the Cygwin directory (typically C:\cygwin).
-   * Delete any files created in the setup temporary directory.
-   * Delete C:\cygwin\bin from the PATH environment variable if you have it.
+This is a Windows batch script for uninstalling Cygwin, a Unix-like environment and command-line interface for Microsoft Windows. The script deletes Cygwin shortcuts on the desktop and start menu, removes the registry node for Cygwin, deletes the Cygwin installation directory, and deletes any temporary files created during the installation process. The script is designed to be run as an administrator and provides feedback at each step, displaying messages to indicate what actions have been taken and whether or not they have been successful.
 
 <h2>Usage</h2>
 
