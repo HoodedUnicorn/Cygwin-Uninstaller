@@ -13,7 +13,7 @@ This script is designed to automate the process of uninstalling Cygwin from a Wi
 <h2>Usage</h2>
 
 1.  Download the CygwinUninstaller.bat file from the repository.
-2.  Right-click on the file and select "Run as administrator".
+2.  Right-click on the file and select "Run as administrator". <br>
 2.1 If you are prompted with a Microsoft Defender Smartscreen popup, select More info and then Run anyway.
 3.  Follow the on-screen prompts to complete the uninstallation process.
 
