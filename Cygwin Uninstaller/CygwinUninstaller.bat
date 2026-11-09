@@ -1,7 +1,7 @@
 @ECHO OFF
 REM Force Run as Administrators
 openfiles > NUL 2>&1
-if NOT %ERRORLEVEL% EQU 0 @powershell start-process '%~0' -verb runas && exit
+IF NOT %ERRORLEVEL% EQU 0 @powershell start-process '%~0' -verb runas && EXIT
 
 TITLE Cygwin Uninstaller
 CHCP 65001 1>nul
@@ -82,7 +82,5 @@ REG DELETE "HKEY_CURRENT_USER\Software\Cygwin" /F > NUL 2>&1
 REG DELETE "HKEY_LOCAL_MACHINE\SOFTWARE\Cygwin" /F > NUL 2>&1
 
 ECHO done.
-pause
+PAUSE
 EXIT
-
-
